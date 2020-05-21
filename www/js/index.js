@@ -48,10 +48,11 @@ var app = {
             });
 
             function onSuccess(imageURI) {
+                //成功
                 var image = _this.$('img');
-                // var text = _this.$('text');
+                var text = _this.$('text');
                 image.src = imageURI;
-                // text.innerHTML = imageURI.substr(imageURI.lastIndexOf('/') + 1);
+                text.innerHTML = imageURI.substr(imageURI.lastIndexOf('/') + 1);
             }
 
             function onFail(message) {
